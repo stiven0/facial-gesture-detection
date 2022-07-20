@@ -1,0 +1,29 @@
+<div class="container-principal">
+
+  <h2>Dayvents 💙🤍</h2>
+
+  <div class="container-emoji">
+    <img [src]=" '../assets/emojis/' + expression + '.png' " [alt]=" expression + '.png'">
+  </div>
+
+  <section class="container-video-canvas">
+
+    <video width="630" height="470" id="videoElement" autoplay muted></video>
+    <canvas width="630" height="470" id="canvasElement"></canvas>
+    
+  </section>
+
+  <!-- <button class="button-starting" (click)="isStarted = true" *ngIf="!isStarted">
+    Iniciar
+  </button>
+
+  <button class="button-starting" (click)="isStarted = false" *ngIf="isStarted">
+    Parar
+  </button> -->
+
+  <button class="button-status">
+    Estado: {{ expression }}
+  </button>
+
+</div>
+
